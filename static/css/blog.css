@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'jf-openhuninn-2.0';
+    src: local('jf-openhuninn-2.0'), url('../fonts/jf-openhuninn-2.0.ttf') format("opentype");
+}
+
+:root {
+    --main-color: #417690;
+    --main-hover-color: #87B3C9;
+    --main-lightcolor: #E6EFF4;
+    --bs-font-sans-serif: "jf-openhuninn-2.0",system-ui,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
+/* bootstrap nav */
+
+.bg-base {
+    background-color: var(--main-color);
+}
+
+.bg-lightbase {
+    background-color: var(--main-lightcolor);
+}
+
+.bg-base .navbar-brand {
+    color: #ffffff;
+}
+
+.nav-text, .nav-link {
+    color: rgba(255, 255, 255);
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: rgba(255, 255, 255, .55);
+}
+
+/* body */
+/* .img-logo {
+    border: 1px solid black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+} */
+
+/* .img-logo img {
+    width: 100%;
+    padding: 1em;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+} */
+
+.container {
+    padding-top: 80px;
+}
+
+.post-title {
+    display: flex;
+    align-items: center;
+}
+
+.post-title span {
+    color: orange;
+    font-size: small;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding-right: 0.5em;
+}
+
+.post-title a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: var(--main-hover-color);
+}
+
+.post-date {
+    font-size: smaller;
+}
+
+.post-content {
+    padding: 0 1em 4px 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    box-sizing: border-box;
+}
+
+.btn-default {
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-size: x-small;
+}
+
+.btn-default:hover {
+    color: var(--main-hover-color);
+    font-size: x-small;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+/* 2. Small devices （橫式手機用途，包含 576px and up) */
+@media (max-width: 576px) {
+    /* .img-logo {
+        height: 100%;
+        padding: 1em;
+    } */
+
+    /* .bg-base {
+        background-color: black;
+    } */
+}
+
+/* 3. Medium devices （平板用途，768px and up) */
+/* @media (min-width: 768px) {
+
+} */
+
+/* 4. Large devices （電腦用途，992px and up) */
+/* @media (min-width: 992px) {
+    .bg-base {
+        background-color: green;
+    }
+} */
