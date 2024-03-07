@@ -1,4 +1,5 @@
 # pythonanywhere_django
+
 modify: 2024-03-07
 
 Step 1. 建立/啟動虛擬環境
@@ -21,10 +22,27 @@ $ pip install djangorestframework
 $ pip install -r requirements.txt
 ```
 
-Step 3. 運行專案，啟動WebServer
+Step 3. 設定SQLite資料庫
+
+```
+$ python manage.py migrate
+```
+
+Step 4. 建立超級使用者
+
+```
+$ python .\manage.py createsuperuser
+```
+
+Step 5. 運行專案，啟動WebServer
 
 ```
 $ python manage.py runserver
+
+<example>
+- Username: zora
+- Email address: (可空白)
+- Password: 123
 ```
 
 備註 . 其他
